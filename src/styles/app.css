@@ -1,0 +1,206 @@
+/* ===========================================
+   GLOBAL RESET
+=========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================================
+   BODY
+=========================================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+/* ===========================================
+   APP
+=========================================== */
+
+.app {
+  max-width: 1300px;
+  margin: auto;
+  padding: 25px;
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 38px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ===========================================
+   DASHBOARD
+=========================================== */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.left-panel {
+  display: flex;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+/* ===========================================
+   WEBCAM
+=========================================== */
+
+.webcam-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.webcam {
+  width: 100%;
+  max-width: 700px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #3b82f6;
+  background: black;
+}
+
+/* ===========================================
+   STATUS
+=========================================== */
+
+.status-good {
+  color: #16a34a;
+  text-align: center;
+  font-size: 22px;
+}
+
+.status-warning {
+  color: #f59e0b;
+  text-align: center;
+  font-size: 22px;
+}
+
+.status-danger {
+  color: #dc2626;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* ===========================================
+   ALERT COUNTER
+=========================================== */
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 12px 0;
+}
+
+/* ===========================================
+   EVENT LOGS
+=========================================== */
+
+.logs-list {
+  list-style: none;
+  max-height: 230px;
+  overflow-y: auto;
+}
+
+.log-item {
+  background: #f3f4f6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.no-logs {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+.logs-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.logs-list::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 10px;
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #4b5563;
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media (max-width: 900px) {
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .webcam {
+    height: 320px;
+  }
+
+}
